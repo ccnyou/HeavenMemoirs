@@ -8,57 +8,57 @@
 
 import UIKit
 
-class RescouceManager: NSObject, NSCoding {
+public class RescouceManager: NSObject, NSCoding {
     // 单例
-    static let share = RescouceManager.init()
+    public static let share = RescouceManager.init()
     private override init() {}
     //方形图片
-    var boxImages: [UIImage] = []
+    public var boxImages: [UIImage] = []
     //水平图片
-    var horizontalImages: [UIImage] = []
+    public var horizontalImages: [UIImage] = []
     //垂直图片
-    var verticalImages: [UIImage] = []
+    public var verticalImages: [UIImage] = []
     ///全景图
-    var panoramaImage: UIImage?
+    public var panoramaImage: UIImage?
     //视频缩略图
-    var videoImage: UIImage?
-    var videoURL: URL?
+    public var videoImage: UIImage?
+    public var videoURL: URL?
     ///粒子
-    var particleType: Int = 2
+    public var particleType: Int = 2
     ///背景音乐
-     var musicName: String?
+    public var musicName: String?
     ///文字
-    var text: String?
-    var textColor: String?
+    public var text: String?
+    public var textColor: String?
     //------盒子图片 要求 1:1-----//
-    func addBoxImage(image: UIImage) {
+    public func addBoxImage(image: UIImage) {
         boxImages.append(image)
     }
-    func deleteBoxImage(image: UIImage) {
+    public func deleteBoxImage(image: UIImage) {
         if boxImages.index(of: image) != NSNotFound {
             boxImages.remove(at: boxImages.index(of: image)!)
         }
     }
     //------横向图片 要求 1:0.618-----//
-    func addHorizontalImage(image: UIImage) {
+    public func addHorizontalImage(image: UIImage) {
         horizontalImages.append(image)
     }
-    func deleteHorizontalImage(image: UIImage) {
+    public func deleteHorizontalImage(image: UIImage) {
         if horizontalImages.index(of: image) != NSNotFound {
             horizontalImages.remove(at: horizontalImages.index(of: image)!)
         }
     }
     //------竖直图片 要求 0.618:1-----//
-    func addVerticalImage(image: UIImage) {
+    public func addVerticalImage(image: UIImage) {
         verticalImages.append(image)
     }
-    func deleteVerticalImage(image: UIImage) {
+    public func deleteVerticalImage(image: UIImage) {
         if verticalImages.index(of: image) != NSNotFound {
             verticalImages.remove(at: verticalImages.index(of: image)!)
         }
     }
     // MARK: 归档&解档
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         //方形
        if let aDecoder_boxImages = aDecoder.decodeObject(forKey: k_R_boxImages) as? [UIImage] {
              boxImages = aDecoder_boxImages
@@ -90,7 +90,7 @@ class RescouceManager: NSObject, NSCoding {
         //音乐
         musicName = aDecoder.decodeObject(forKey: k_R_musicName) as? String
     }
-    func encode(with aCoder: NSCoder) {
+    public func encode(with aCoder: NSCoder) {
         aCoder.encode(self.boxImages, forKey: k_R_boxImages)
         aCoder.encode(self.horizontalImages, forKey: k_R_horizontalImages)
         aCoder.encode(self.verticalImages, forKey: k_R_verticalImages)

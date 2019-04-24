@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		120351E71F9C441E0074679A /* HKPanoramaSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120351E61F9C441E0074679A /* HKPanoramaSelectViewController.swift */; };
-		120352091F9C6ED70074679A /* RescouceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120352081F9C6ED70074679A /* RescouceConfiguration.swift */; };
 		120352521F9C9FDD0074679A /* bokeh.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 120352501F9C9FDD0074679A /* bokeh.scnp */; };
 		120352531F9C9FDD0074679A /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 120352511F9C9FDD0074679A /* bokeh.png */; };
 		123335981F9854A50070C868 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1233357E1F9854A30070C868 /* UIView+Layout.m */; };
@@ -37,7 +36,6 @@
 		124AC8451FA9DF8E009773CA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 124AC8441FA9DF8E009773CA /* libsqlite3.tbd */; };
 		124AC86B1FA9FDBA009773CA /* HKExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124AC86A1FA9FDBA009773CA /* HKExplainViewController.swift */; };
 		124EA0781F778BA700AEECA1 /* HKMemoirsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124EA0771F778BA700AEECA1 /* HKMemoirsViewController.swift */; };
-		124F78F11F97337900A9180B /* HKARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F78F01F97337900A9180B /* HKARSCNView.swift */; };
 		124F78F51F97579C00A9180B /* HKImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F78F41F97579C00A9180B /* HKImageCollectionViewCell.swift */; };
 		125028B21FFDEB2100553778 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 125028B41FFDEB2100553778 /* Localizable.strings */; };
 		125028B81FFDEF8900553778 /* PermissionScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125028B71FFDEF8900553778 /* PermissionScope.swift */; };
@@ -62,29 +60,47 @@
 		12AD3B321FE919E40095157C /* 蓝色降落伞.aac in Resources */ = {isa = PBXBuildFile; fileRef = 12AD3B2C1FE919E40095157C /* 蓝色降落伞.aac */; };
 		12E05EBE1F95B2A100B1D250 /* HKSelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E05EBD1F95B2A100B1D250 /* HKSelectImageViewController.swift */; };
 		12E05EC01F95DC4300B1D250 /* HKImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E05EBF1F95DC4300B1D250 /* HKImageTableViewCell.swift */; };
-		12E05ECC1F95F7CB00B1D250 /* RescouceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E05ECB1F95F7CB00B1D250 /* RescouceManager.swift */; };
 		12E5BE2C1F9CAA9500FD3F1F /* rain.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 12E5BE2A1F9CAA9500FD3F1F /* rain.scnp */; };
 		12E5BE2D1F9CAA9500FD3F1F /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E5BE2B1F9CAA9500FD3F1F /* spark.png */; };
 		12E5BE301F9CAB1000FD3F1F /* confetti.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 12E5BE2E1F9CAB1000FD3F1F /* confetti.scnp */; };
 		12E5BE311F9CAB1000FD3F1F /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E5BE2F1F9CAB1000FD3F1F /* confetti.png */; };
 		12E5BE331F9CBF8D00FD3F1F /* HKMusicSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5BE321F9CBF8D00FD3F1F /* HKMusicSelectTableViewController.swift */; };
 		12E5BE351F9CC08800FD3F1F /* HKMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5BE341F9CC08800FD3F1F /* HKMusicTableViewCell.swift */; };
-		12F55C721F9DF2DD00EF0556 /* HKMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F55C711F9DF2DD00EF0556 /* HKMacro.swift */; };
 		12FAB3F71F78A86F0019FAB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12FAB3F61F78A86F0019FAB6 /* Assets.xcassets */; };
 		3D995A406F2ED03F9EE14346 /* Pods_HeavenMemoirs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C0A88C55DD53B14C91CA5F /* Pods_HeavenMemoirs.framework */; };
-		A65ACD0D227091CC003C2C96 /* ARAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = A65ACD0C227091CC003C2C96 /* ARAlbum.m */; };
-		A65ACD0E227091CC003C2C96 /* ARAlbum.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A65ACD0B227091CC003C2C96 /* ARAlbum.h */; };
+		A65ACD3522709D27003C2C96 /* ARAlbum.h in Headers */ = {isa = PBXBuildFile; fileRef = A65ACD3322709D27003C2C96 /* ARAlbum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A65ACD3822709D27003C2C96 /* ARAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65ACD3122709D27003C2C96 /* ARAlbum.framework */; };
+		A65ACD3922709D27003C2C96 /* ARAlbum.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A65ACD3122709D27003C2C96 /* ARAlbum.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A65ACD3D22709D2B003C2C96 /* HKARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F78F01F97337900A9180B /* HKARSCNView.swift */; };
+		A65ACD4022709D86003C2C96 /* RescouceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E05ECB1F95F7CB00B1D250 /* RescouceManager.swift */; };
+		A65ACD4122709E74003C2C96 /* HKMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F55C711F9DF2DD00EF0556 /* HKMacro.swift */; };
+		A65ACD4222709EA5003C2C96 /* RescouceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120352081F9C6ED70074679A /* RescouceConfiguration.swift */; };
+		A65ACD4322709F22003C2C96 /* RescouceConfiguration.swift in Headers */ = {isa = PBXBuildFile; fileRef = 120352081F9C6ED70074679A /* RescouceConfiguration.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		A65ACD4422709F22003C2C96 /* HKMacro.swift in Headers */ = {isa = PBXBuildFile; fileRef = 12F55C711F9DF2DD00EF0556 /* HKMacro.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		A65ACD4522709F22003C2C96 /* RescouceManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 12E05ECB1F95F7CB00B1D250 /* RescouceManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		A65ACD4622709F22003C2C96 /* HKARSCNView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 124F78F01F97337900A9180B /* HKARSCNView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A65ACD3622709D27003C2C96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 127872271F7776CC00F1068D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A65ACD3022709D27003C2C96;
+			remoteInfo = ARAlbum;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		A65ACD07227091CC003C2C96 /* CopyFiles */ = {
+		A65ACD2922709CCD003C2C96 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
-				A65ACD0E227091CC003C2C96 /* ARAlbum.h in CopyFiles */,
+				A65ACD3922709D27003C2C96 /* ARAlbum.framework in Embed Frameworks */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -182,9 +198,9 @@
 		12FAB3F61F78A86F0019FAB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8666FEB0B97DB0BA1522B266 /* Pods-HeavenMemoirs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeavenMemoirs.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeavenMemoirs/Pods-HeavenMemoirs.release.xcconfig"; sourceTree = "<group>"; };
 		9AD8AA1F4098C7480439C6F2 /* Pods-HeavenMemoirs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeavenMemoirs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeavenMemoirs/Pods-HeavenMemoirs.debug.xcconfig"; sourceTree = "<group>"; };
-		A65ACD09227091CC003C2C96 /* libARAlbum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libARAlbum.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A65ACD0B227091CC003C2C96 /* ARAlbum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAlbum.h; sourceTree = "<group>"; };
-		A65ACD0C227091CC003C2C96 /* ARAlbum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAlbum.m; sourceTree = "<group>"; };
+		A65ACD3122709D27003C2C96 /* ARAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A65ACD3322709D27003C2C96 /* ARAlbum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAlbum.h; sourceTree = "<group>"; };
+		A65ACD3422709D27003C2C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,10 +212,11 @@
 				124AC8431FA9DF86009773CA /* libz.tbd in Frameworks */,
 				124AC8411FA9DF7E009773CA /* CoreTelephony.framework in Frameworks */,
 				3D995A406F2ED03F9EE14346 /* Pods_HeavenMemoirs.framework in Frameworks */,
+				A65ACD3822709D27003C2C96 /* ARAlbum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A65ACD06227091CC003C2C96 /* Frameworks */ = {
+		A65ACD2E22709D27003C2C96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,7 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				127872311F7776CC00F1068D /* HeavenMemoirs */,
-				A65ACD0A227091CC003C2C96 /* ARAlbum */,
+				A65ACD3222709D27003C2C96 /* ARAlbum */,
 				127872301F7776CC00F1068D /* Products */,
 				A8FA97BB1C400EA6AA6D33BB /* Pods */,
 				09531E69B2A57A3A8CCBE0DF /* Frameworks */,
@@ -307,7 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				1278722F1F7776CC00F1068D /* HeavenMemoirs.app */,
-				A65ACD09227091CC003C2C96 /* libARAlbum.a */,
+				A65ACD3122709D27003C2C96 /* ARAlbum.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,7 +386,6 @@
 		12D3A2DE1F77775100B1D6CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				124F78F01F97337900A9180B /* HKARSCNView.swift */,
 				12E05EBF1F95DC4300B1D250 /* HKImageTableViewCell.swift */,
 				124F78F41F97579C00A9180B /* HKImageCollectionViewCell.swift */,
 				12E5BE341F9CC08800FD3F1F /* HKMusicTableViewCell.swift */,
@@ -411,18 +427,19 @@
 		12E05EC81F95F5F400B1D250 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				12F55C711F9DF2DD00EF0556 /* HKMacro.swift */,
-				12E05ECB1F95F7CB00B1D250 /* RescouceManager.swift */,
-				120352081F9C6ED70074679A /* RescouceConfiguration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A65ACD0A227091CC003C2C96 /* ARAlbum */ = {
+		A65ACD3222709D27003C2C96 /* ARAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				A65ACD0B227091CC003C2C96 /* ARAlbum.h */,
-				A65ACD0C227091CC003C2C96 /* ARAlbum.m */,
+				120352081F9C6ED70074679A /* RescouceConfiguration.swift */,
+				12F55C711F9DF2DD00EF0556 /* HKMacro.swift */,
+				12E05ECB1F95F7CB00B1D250 /* RescouceManager.swift */,
+				124F78F01F97337900A9180B /* HKARSCNView.swift */,
+				A65ACD3322709D27003C2C96 /* ARAlbum.h */,
+				A65ACD3422709D27003C2C96 /* Info.plist */,
 			);
 			path = ARAlbum;
 			sourceTree = "<group>";
@@ -438,6 +455,21 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A65ACD2C22709D27003C2C96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A65ACD3522709D27003C2C96 /* ARAlbum.h in Headers */,
+				A65ACD4322709F22003C2C96 /* RescouceConfiguration.swift in Headers */,
+				A65ACD4422709F22003C2C96 /* HKMacro.swift in Headers */,
+				A65ACD4522709F22003C2C96 /* RescouceManager.swift in Headers */,
+				A65ACD4622709F22003C2C96 /* HKARSCNView.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		1278722E1F7776CC00F1068D /* HeavenMemoirs */ = {
 			isa = PBXNativeTarget;
@@ -450,23 +482,26 @@
 				0803A73AD2FD86FB99D149AC /* [CP] Embed Pods Frameworks */,
 				94F3938B87A773AFED701994 /* [CP] Copy Pods Resources */,
 				126E5CBE20CF9CB300BAD50A /* ShellScript */,
+				A65ACD2922709CCD003C2C96 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A65ACD3722709D27003C2C96 /* PBXTargetDependency */,
 			);
 			name = HeavenMemoirs;
 			productName = HeavenMemoirs;
 			productReference = 1278722F1F7776CC00F1068D /* HeavenMemoirs.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A65ACD08227091CC003C2C96 /* ARAlbum */ = {
+		A65ACD3022709D27003C2C96 /* ARAlbum */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A65ACD0F227091CC003C2C96 /* Build configuration list for PBXNativeTarget "ARAlbum" */;
+			buildConfigurationList = A65ACD3A22709D27003C2C96 /* Build configuration list for PBXNativeTarget "ARAlbum" */;
 			buildPhases = (
-				A65ACD05227091CC003C2C96 /* Sources */,
-				A65ACD06227091CC003C2C96 /* Frameworks */,
-				A65ACD07227091CC003C2C96 /* CopyFiles */,
+				A65ACD2C22709D27003C2C96 /* Headers */,
+				A65ACD2D22709D27003C2C96 /* Sources */,
+				A65ACD2E22709D27003C2C96 /* Frameworks */,
+				A65ACD2F22709D27003C2C96 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -474,8 +509,8 @@
 			);
 			name = ARAlbum;
 			productName = ARAlbum;
-			productReference = A65ACD09227091CC003C2C96 /* libARAlbum.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = A65ACD3122709D27003C2C96 /* ARAlbum.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -485,7 +520,7 @@
 			attributes = {
 				CLASSPREFIX = HK;
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = HeiKki;
 				TargetAttributes = {
 					1278722E1F7776CC00F1068D = {
@@ -493,9 +528,9 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
-					A65ACD08227091CC003C2C96 = {
+					A65ACD3022709D27003C2C96 = {
 						CreatedOnToolsVersion = 10.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -514,7 +549,7 @@
 			projectRoot = "";
 			targets = (
 				1278722E1F7776CC00F1068D /* HeavenMemoirs */,
-				A65ACD08227091CC003C2C96 /* ARAlbum */,
+				A65ACD3022709D27003C2C96 /* ARAlbum */,
 			);
 		};
 /* End PBXProject section */
@@ -545,6 +580,13 @@
 				12E5BE301F9CAB1000FD3F1F /* confetti.scnp in Resources */,
 				12AD3B301FE919E40095157C /* 至此流年各天涯.aac in Resources */,
 				1259C48D1FAB401F002BEE2D /* 岁月神偷.aac in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A65ACD2F22709D27003C2C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,7 +671,6 @@
 			files = (
 				120351E71F9C441E0074679A /* HKPanoramaSelectViewController.swift in Sources */,
 				124EA0781F778BA700AEECA1 /* HKMemoirsViewController.swift in Sources */,
-				124F78F11F97337900A9180B /* HKARSCNView.swift in Sources */,
 				1233359B1F9854A50070C868 /* TZVideoPlayerController.m in Sources */,
 				123335A41F9854A50070C868 /* TZPhotoPreviewController.m in Sources */,
 				124AC86B1FA9FDBA009773CA /* HKExplainViewController.swift in Sources */,
@@ -648,12 +689,9 @@
 				127872371F7776CC00F1068D /* ViewController.swift in Sources */,
 				1233359A1F9854A50070C868 /* TZPhotoPickerController.m in Sources */,
 				123335A51F9854A50070C868 /* TZAssetCell.m in Sources */,
-				12F55C721F9DF2DD00EF0556 /* HKMacro.swift in Sources */,
 				123335991F9854A50070C868 /* TZImageManager.m in Sources */,
 				127872331F7776CC00F1068D /* AppDelegate.swift in Sources */,
-				120352091F9C6ED70074679A /* RescouceConfiguration.swift in Sources */,
 				123335A01F9854A50070C868 /* NSBundle+TZImagePicker.m in Sources */,
-				12E05ECC1F95F7CB00B1D250 /* RescouceManager.swift in Sources */,
 				125028B81FFDEF8900553778 /* PermissionScope.swift in Sources */,
 				128BEBAE1F98AC9C002C58E1 /* HKTools.swift in Sources */,
 				1233359E1F9854A50070C868 /* TZLocationManager.m in Sources */,
@@ -670,15 +708,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A65ACD05227091CC003C2C96 /* Sources */ = {
+		A65ACD2D22709D27003C2C96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A65ACD0D227091CC003C2C96 /* ARAlbum.m in Sources */,
+				A65ACD4122709E74003C2C96 /* HKMacro.swift in Sources */,
+				A65ACD4022709D86003C2C96 /* RescouceManager.swift in Sources */,
+				A65ACD3D22709D2B003C2C96 /* HKARSCNView.swift in Sources */,
+				A65ACD4222709EA5003C2C96 /* RescouceConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A65ACD3722709D27003C2C96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A65ACD3022709D27003C2C96 /* ARAlbum */;
+			targetProxy = A65ACD3622709D27003C2C96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		125028B41FFDEB2100553778 /* Localizable.strings */ = {
@@ -725,6 +774,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -732,6 +782,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -783,6 +834,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -790,6 +842,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -823,6 +876,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9AD8AA1F4098C7480439C6F2 /* Pods-HeavenMemoirs.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -864,6 +918,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8666FEB0B97DB0BA1522B266 /* Pods-HeavenMemoirs.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -900,38 +955,60 @@
 			};
 			name = Release;
 		};
-		A65ACD10227091CC003C2C96 /* Debug */ = {
+		A65ACD3B22709D27003C2C96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HFXYG2JR7Z;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ARAlbum/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccnyou.ARAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A65ACD11227091CC003C2C96 /* Release */ = {
+		A65ACD3C22709D27003C2C96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HFXYG2JR7Z;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ARAlbum/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccnyou.ARAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -956,11 +1033,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A65ACD0F227091CC003C2C96 /* Build configuration list for PBXNativeTarget "ARAlbum" */ = {
+		A65ACD3A22709D27003C2C96 /* Build configuration list for PBXNativeTarget "ARAlbum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A65ACD10227091CC003C2C96 /* Debug */,
-				A65ACD11227091CC003C2C96 /* Release */,
+				A65ACD3B22709D27003C2C96 /* Debug */,
+				A65ACD3C22709D27003C2C96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

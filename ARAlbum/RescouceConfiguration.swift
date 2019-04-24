@@ -8,26 +8,26 @@
 
 import UIKit
 
-class RescouceConfiguration: NSObject, NSCoding {
+public class RescouceConfiguration: NSObject, NSCoding {
     // 单例
-    static let share = RescouceConfiguration.init()
+    public static let share = RescouceConfiguration.init()
     private override init() {}
-    let showShow: Int = 20180106
+    public let showShow: Int = 20180106
     ///box 图片是否随机
-    var box_Random: Bool              = false
+    public var box_Random: Bool              = false
     ///全景图
-    var panorama_isShow: Bool         = false
+    public var panorama_isShow: Bool         = false
     ///视频
-    var video_isPlay: Bool            = false
+    public var video_isPlay: Bool            = false
     ///视频静音
-    var video_isSilence: Bool         = false
+    public var video_isSilence: Bool         = false
     ///背景音乐
-    var voice_isPlay: Bool            = false
+    public var voice_isPlay: Bool            = false
     ///文字
-    var text_isShow: Bool             = false
+    public var text_isShow: Bool             = false
     ///粒子
-    var particle_isShow: Bool         = true
-    func encode(with aCoder: NSCoder) {
+    public var particle_isShow: Bool         = true
+    public func encode(with aCoder: NSCoder) {
         aCoder.encode(box_Random, forKey: k_C_box_Random)
         aCoder.encode(panorama_isShow, forKey: k_C_panorama_isShow)
         aCoder.encode(video_isPlay, forKey: k_C_video_isPlay)
@@ -36,7 +36,7 @@ class RescouceConfiguration: NSObject, NSCoding {
         aCoder.encode(text_isShow, forKey: k_C_text_isShow)
         aCoder.encode(particle_isShow, forKey: k_C_particle_isShow)
     }
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         box_Random           = aDecoder.decodeBool(forKey: k_C_box_Random)
         panorama_isShow      = aDecoder.decodeBool(forKey: k_C_panorama_isShow)
         video_isPlay         = aDecoder.decodeBool(forKey: k_C_video_isPlay)
@@ -46,7 +46,7 @@ class RescouceConfiguration: NSObject, NSCoding {
         particle_isShow      = aDecoder.decodeBool(forKey: k_C_particle_isShow)
     }
     ///是否显示
-     func show() -> Bool {
+    public func show() -> Bool {
         let currentDate = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"

@@ -8,6 +8,7 @@
 
 import UIKit
 import Photos
+import ARAlbum
 
 let identifier_Box: String = "HKImageCollectionViewCell_Box"
 let identifier_H: String = "HKImageCollectionViewCell_H"

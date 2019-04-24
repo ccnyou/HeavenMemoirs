@@ -6,8 +6,14 @@
 //  Copyright © 2019 HeiKki. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ARAlbum : NSObject
+//! Project version number for ARAlbum.
+FOUNDATION_EXPORT double ARAlbumVersionNumber;
 
-@end
+//! Project version string for ARAlbum.
+FOUNDATION_EXPORT const unsigned char ARAlbumVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <ARAlbum/PublicHeader.h>
+
+

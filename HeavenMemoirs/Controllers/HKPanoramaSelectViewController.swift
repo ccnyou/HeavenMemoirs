@@ -8,6 +8,7 @@
 
 import UIKit
 import ARKit
+import ARAlbum
 
 class HKPanoramaSelectViewController: UIViewController {
     @IBOutlet weak var arSCNView: ARSCNView!

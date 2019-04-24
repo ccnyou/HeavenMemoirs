@@ -9,17 +9,17 @@
 import UIKit
 import ARKit
 
-class HKARSCNView: ARSCNView {
-    let rescouceManager = RescouceManager.share
-    let rescoucceConfiguration = RescouceConfiguration.share
-    var videoPlayer: AVPlayer?
-    lazy var musicPlayer: AVPlayer = {
+public class HKARSCNView: ARSCNView {
+    public let rescouceManager = RescouceManager.share
+    public let rescoucceConfiguration = RescouceConfiguration.share
+    public var videoPlayer: AVPlayer?
+    public lazy var musicPlayer: AVPlayer = {
         let  musicPlayer = AVPlayer()
         return musicPlayer
     }()
     ///环的半径
-    let ringRadius: Float = 6.0
-    func removeAllNodes() {
+    public let ringRadius: Float = 6.0
+    public func removeAllNodes() {
         for node in self.scene.rootNode.childNodes {
             node.removeFromParentNode()
         }
@@ -27,7 +27,7 @@ class HKARSCNView: ARSCNView {
         musicPlayer.pause()
         NotificationCenter.default.removeObserver(self)
     }
-    func addPhotoRing_V(vector3: SCNVector3, left: CGFloat, L: Int) {
+    public func addPhotoRing_V(vector3: SCNVector3, left: CGFloat, L: Int) {
         let photoRingNode = SCNNode()
         photoRingNode.position = SCNVector3Zero
         self.scene.rootNode.addChildNode(photoRingNode)
@@ -51,7 +51,7 @@ class HKARSCNView: ARSCNView {
         let ringAction = SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: left, z: 0, duration: 10))
         photoRingNode.runAction(ringAction)
     }
-    func addPhotoRing_H(vector3: SCNVector3, left: CGFloat, L: Int) {
+    public func addPhotoRing_H(vector3: SCNVector3, left: CGFloat, L: Int) {
         let photoRingNode = SCNNode()
         photoRingNode.position = SCNVector3Zero
         self.scene.rootNode.addChildNode(photoRingNode)
@@ -75,7 +75,7 @@ class HKARSCNView: ARSCNView {
         let ringAction = SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: left, z: 0, duration: 10))
         photoRingNode.runAction(ringAction)
     }
-    func addPhotoRing_Box(vector3: SCNVector3, left: CGFloat, L: Int) {
+    public func addPhotoRing_Box(vector3: SCNVector3, left: CGFloat, L: Int) {
         let photoRingNode = SCNNode()
         photoRingNode.position = SCNVector3Zero
         self.scene.rootNode.addChildNode(photoRingNode)
@@ -112,13 +112,13 @@ class HKARSCNView: ARSCNView {
         }
     }
     // MARK: 显示文字
-    func addPhotoRing_Text(text: String, color: String) {
+    public func addPhotoRing_Text(text: String, color: String) {
         let textRingNode = SCNNode()
         textRingNode.position = SCNVector3Zero
         self.scene.rootNode.addChildNode(textRingNode)
         var index: Int = 0
         var angle: Float = 0
-        for t in text.characters {
+        for t in text {
             index += 1
             let str = String(t)
             let text = SCNText(string: str, extrusionDepth: 0.1)
@@ -142,7 +142,7 @@ class HKARSCNView: ARSCNView {
         let ringAction = SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: -1, z: 0, duration: 5))
         textRingNode.runAction(ringAction)
     }
-    func addPhotoRing_Back(vector3: SCNVector3, left: CGFloat, L: Int) {
+    public func addPhotoRing_Back(vector3: SCNVector3, left: CGFloat, L: Int) {
         let photoRingNode = SCNNode()
         photoRingNode.position = SCNVector3Zero
         self.scene.rootNode.addChildNode(photoRingNode)
@@ -166,7 +166,7 @@ class HKARSCNView: ARSCNView {
         let ringAction = SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: left, z: 0, duration: 20))
         photoRingNode.runAction(ringAction)
     }
-    func addPanoramaImage(image: UIImage) {
+    public func addPanoramaImage(image: UIImage) {
         let sphere = SCNSphere(radius: 15)
         let sphereNode = SCNNode(geometry: sphere)
         sphere.firstMaterial?.isDoubleSided = true
@@ -174,7 +174,7 @@ class HKARSCNView: ARSCNView {
         sphereNode.position = SCNVector3Zero
         scene.rootNode.addChildNode(sphereNode)
     }
-    func playVideo(url: URL) {
+    public func playVideo(url: URL) {
         let boxNode = SCNNode()
         if let videoSize = rescouceManager.videoImage?.size {
             var width: CGFloat = 2.0
@@ -204,7 +204,7 @@ class HKARSCNView: ARSCNView {
             videoNode.play()
         }
     }
-    func playMusic(musicName: String) {
+    public func playMusic(musicName: String) {
         //播放音乐
         if let resourceUrl = Bundle.main.url(forResource: musicName, withExtension: "aac") {
             if FileManager.default.fileExists(atPath: resourceUrl.path) {
@@ -214,7 +214,7 @@ class HKARSCNView: ARSCNView {
             }
         }
     }
-    func addParticleSytem(type: Int) {
+    public func addParticleSytem(type: Int) {
         let particleNode = SCNNode()
         var particleName: String = ""
         var Y: Float = 0
@@ -236,7 +236,7 @@ class HKARSCNView: ARSCNView {
             self.scene.rootNode.addChildNode(particleNode)
         }
     }
-    @objc func playEnd(notify: Notification) {
+     @objc func playEnd(notify: Notification) {
         let item = notify.object as! AVPlayerItem
         if videoPlayer?.currentItem == item {
             videoPlayer?.seek(to: kCMTimeZero)

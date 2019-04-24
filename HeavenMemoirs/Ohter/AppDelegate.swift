@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ARAlbum
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

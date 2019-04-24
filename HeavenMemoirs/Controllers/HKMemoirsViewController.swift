@@ -12,6 +12,7 @@ import ARKit
 import ReplayKit
 import AssetsLibrary
 import Photos
+import ARAlbum
 
 class HKMemoirsViewController: UIViewController, ARSCNViewDelegate {
 

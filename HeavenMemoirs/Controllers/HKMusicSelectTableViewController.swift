@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import ARAlbum
 
 class HKMusicSelectTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
